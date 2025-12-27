@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ResultActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="467dp"
+        android:layout_height="194dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/winner_trophy" />
+
+    <TextView
+        android:id="@+id/scoreTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/archivo_black"
+        android:padding="20dp"
+        android:text="PERFECT"
+        android:textAlignment="center"
+        android:textColor="#FFFFFFFF"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/starsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/star1"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/star2"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/star3"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="356dp"
+        android:text="10/10"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/earnedPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:gravity="center"
+        android:text="You Earned: 0 Points"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/score" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/home"
+        android:layout_width="275dp"
+        android:layout_height="279dp"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:contentDescription="Go to Home"
+        android:src="@drawable/icon_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/score"
+        app:layout_constraintVertical_bias="0.768" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
