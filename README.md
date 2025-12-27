@@ -87,8 +87,3 @@ To enable Firebase features:
 - Firebase Auth integration (user login/signup)
 - Cloud database usage (Firestore CRUD for leaderboard/users)
 - Clean project organization (models/adapters/screens separation)
-
----
-
-## Notes
-Build artifacts (e.g., `build/`, `.gradle/`, `.idea/`) should remain excluded from GitHub via `.gitignore`.
